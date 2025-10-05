@@ -18,6 +18,7 @@
       justify-content: center;
       align-items: center;
     }
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5em;
@@ -40,12 +41,46 @@
     a.button:hover {
       background-color: #e29b30;
     }
+    /* Navigation Bar CSS */
+    nav {
+      width: 100%;
+      background:#0F4C81;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+    body > .content {
+      margin-top: 100px; /* Push content below fixed nav */
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Kwaku Bonful Bosompim's Portfolio</h1>
-  <p>MSc Finance & Investment | MSc Data Analytics | DFB Basis Coach<br>
-     Exploring data, finance, and football development — one project at a time.</p>
-  <a href="projects.html" class="button">View My Projects</a>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="videos.html">Popular Videos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="content">
+    <h1>Welcome to Kwaku Bonful Bosompim's Portfolio</h1>
+    <p>MSc Finance & Investment | MSc Data Analytics | DFB Basis Coach<br>
+       Exploring data, finance, and football development — one project at a time.</p>
+    <a href="projects.html" class="button">View My Projects</a>
+  </div>
 </body>
 </html>
