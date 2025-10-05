@@ -41,14 +41,14 @@
       transform: scale(1.05);
     }
 
-    /* Content */
+    /* Main Content */
     .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 80vh;
-      padding: 120px 20px 40px 20px; /* push below nav */
+      padding: 120px 20px 40px 20px; /* push content below nav */
     }
 
     h1 {
@@ -78,15 +78,37 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
+    /* My Promise / About Section */
+    .my-promise {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px 20px;
+      margin-top: 50px;
+      max-width: 700px;
+    }
+    .my-promise h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .my-promise p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: white;
+      margin-bottom: 10px;
+    }
+
     /* Responsive */
     @media (max-width: 600px) {
       h1 { font-size: 2rem; }
       p { font-size: 1rem; }
       nav { padding: 15px 0; gap: 15px; }
+      .my-promise { padding: 20px 15px; }
+      .my-promise h2 { font-size: 1.5rem; }
     }
   </style>
 </head>
 <body>
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
@@ -94,11 +116,26 @@
     <a href="contact.html">Contact</a>
   </nav>
 
+  <!-- Main Content -->
   <div class="content">
     <h1>Welcome to Kwaku Bonful Bosompim's Portfolio</h1>
     <p>MSc Finance & Investment | MSc Data Analytics | DFB Basis Coach<br>
        Exploring data, finance, and football development — one project at a time.</p>
     <a href="projects.html" class="button">View My Projects</a>
+
+    <!-- My Promise / About Section -->
+    <section class="my-promise">
+      <h2>My Promise</h2>
+      <p>
+        I commit to delivering <strong>high-quality data analytics and finance solutions</strong> through my projects,
+        combining rigorous analysis with real-world impact. As a DFB Basis Coach, I bring dedication,
+        discipline, and continuous learning to every project and collaboration.
+      </p>
+      <p>
+        My goal is to help organizations, students, and collaborators <strong>turn data into actionable insights</strong>
+        and to share my knowledge through projects, tutorials, and mentorship.
+      </p>
+    </section>
   </div>
 </body>
 </html>
