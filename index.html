@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwaku Bonful Bosompim | Portfolio</title>
   <style>
+    /* General Styles */
     body {
       margin: 0;
       padding: 0;
@@ -13,10 +14,41 @@
       background: linear-gradient(135deg, #0F4C81, #00BFA6);
       text-align: center;
       min-height: 100vh;
+    }
+
+    /* Navigation Bar */
+    nav {
+      width: 100%;
+      background:#0F4C81;
+      padding: 18px 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    nav a:hover {
+      opacity: 0.85;
+      transform: scale(1.05);
+    }
+
+    /* Content */
+    .content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      min-height: 80vh;
+      padding: 120px 20px 40px 20px; /* push below nav */
     }
 
     h1 {
@@ -29,6 +61,8 @@
       margin-bottom: 1.5em;
       line-height: 1.5;
     }
+
+    /* Buttons */
     a.button {
       background-color: #FFB03B;
       color: white;
@@ -36,39 +70,23 @@
       padding: 12px 25px;
       border-radius: 25px;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     }
     a.button:hover {
       background-color: #e29b30;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
-    /* Navigation Bar CSS */
-    nav {
-      width: 100%;
-      background:#0F4C81;
-      padding: 15px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      opacity: 0.8;
-    }
-    body > .content {
-      margin-top: 100px; /* Push content below fixed nav */
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      p { font-size: 1rem; }
+      nav { padding: 15px 0; gap: 15px; }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
   <nav>
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
