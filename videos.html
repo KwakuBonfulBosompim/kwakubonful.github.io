@@ -1,77 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Popular Videos — Kwaku Bonful Bosompim</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f4f4;
-      color: #0F4C81;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    h1 { margin-bottom: 20px; }
-    .video {
-      background: white;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 6px 18px rgba(12,24,40,0.06);
-    }
-    .video iframe {
-      width: 100%;
-      height: 315px;
-      border: none;
-      border-radius: 10px;
-    }
-    a.home-link { display:block; margin-bottom:40px; text-decoration:none; color:#0F4C81; font-weight:bold; }
-    /* Navigation Bar */
-    nav {
-      width: 100%;
-      background:#0F4C81;
-      padding: 15px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { opacity: 0.8; }
-    body > .content { margin-top: 100px; }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="videos.html">Popular Videos</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popular Videos — Kwaku Bonful Bosompim</title>
+<style>
+body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#f4f4f4; color:#0F4C81; text-align:center; }
+nav { width:100%; background:#0F4C81; padding:18px 0; display:flex; justify-content:center; gap:25px; position:fixed; top:0; left:0; z-index:1000; box-shadow:0 2px 8px rgba(0,0,0,0.15); }
+nav a { color:white; text-decoration:none; font-weight:bold; transition: transform 0.2s ease, opacity 0.2s ease; }
+nav a:hover { opacity:0.85; transform:scale(1.05); }
 
-  <div class="content">
-    <h1>Popular Videos</h1>
+.content { margin-top:100px; padding:20px; }
+h1 { margin-bottom:20px; }
 
-    <div class="video">
-      <h2>Data Analytics Project Walkthrough</h2>
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video" allowfullscreen></iframe>
-    </div>
+.videos-container { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:20px; max-width:1000px; margin:0 auto; }
+.video { background:white; padding:20px; border-radius:10px; box-shadow:0 6px 18px rgba(12,24,40,0.06); }
+.video iframe { width:100%; height:315px; border:none; border-radius:10px; }
 
-    <div class="video">
-      <h2>Stock Sentiment Forecasting Tutorial</h2>
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video" allowfullscreen></iframe>
-    </div>
-
-    <div class="video">
-      <h2>Portfolio Optimization Explained</h2>
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="YouTube video" allowfullscreen></iframe>
-    </div>
-  </div>
-</body>
-</html>
+@media (max-width:600px){ nav{padding:15px 0; gap:15px;} }
+</style
