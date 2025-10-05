@@ -37,41 +37,64 @@
     }
     .project a:hover { background-color: #e29b30; }
     a.home-link { display:block; margin-bottom:40px; text-decoration:none; color:#0F4C81; font-weight:bold; }
+    /* Navigation Bar */
+    nav {
+      width: 100%;
+      background:#0F4C81;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { opacity: 0.8; }
+    body > .content { margin-top: 100px; }
   </style>
 </head>
 <body>
-  <a href="index.html" class="home-link">&larr; Back to Home</a>
-  <h1>My GitHub Projects</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="videos.html">Popular Videos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <div class="project">
-    <h2>MSc Data Analytics and ML Projects</h2>
-    <p>Weekly coursework and projects from MSc in Data Analytics and Predictive Machine Learning using Python.</p>
-    <a href="https://github.com/KwakuBonfulBosompim/MSc-Data-Analytics-and-ML-Projects" target="_blank">View on GitHub</a>
+  <div class="content">
+    <h1>My GitHub Projects</h1>
+
+    <div class="project">
+      <h2>MSc Data Analytics and ML Projects</h2>
+      <p>Weekly coursework and projects from MSc in Data Analytics and Predictive Machine Learning using Python.</p>
+      <a href="https://github.com/KwakuBonfulBosompim/MSc-Data-Analytics-and-ML-Projects" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h2>Stock Sentiment Forecasting</h2>
+      <p>Stock price forecasting combining news sentiment analysis and financial time series modeling.</p>
+      <a href="https://github.com/KwakuBonfulBosompim/Stock-Sentiment-Forecasting" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h2>Customer Segmentation</h2>
+      <p>Using RFM and clustering to segment customers for targeted marketing.</p>
+      <a href="https://github.com/KwakuBonfulBosompim/Customer-Segmentation" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h2>Portfolio Optimization</h2>
+      <p>Monte Carlo simulations to find optimal portfolio allocations and forecast returns.</p>
+      <a href="https://github.com/KwakuBonfulBosompim/Portfolio-Optimization" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h2>Multi-Sector Time Series Forecasting with ML</h2>
+      <p>Applied machine learning to link climate, energy, and consumer demand for predictive insights.</p>
+      <a href="https://github.com/KwakuBonfulBosompim/Multi-Sector-Time-Series-Forecasting-with-Machine-Learning" target="_blank">View on GitHub</a>
+    </div>
   </div>
-
-  <div class="project">
-    <h2>Stock Sentiment Forecasting</h2>
-    <p>Stock price forecasting combining news sentiment analysis and financial time series modeling.</p>
-    <a href="https://github.com/KwakuBonfulBosompim/Stock-Sentiment-Forecasting" target="_blank">View on GitHub</a>
-  </div>
-
-  <div class="project">
-    <h2>Customer Segmentation</h2>
-    <p>Using RFM and clustering to segment customers for targeted marketing.</p>
-    <a href="https://github.com/KwakuBonfulBosompim/Customer-Segmentation" target="_blank">View on GitHub</a>
-  </div>
-
-  <div class="project">
-    <h2>Portfolio Optimization</h2>
-    <p>Monte Carlo simulations to find optimal portfolio allocations and forecast returns.</p>
-    <a href="https://github.com/KwakuBonfulBosompim/Portfolio-Optimization" target="_blank">View on GitHub</a>
-  </div>
-
-  <div class="project">
-    <h2>Multi-Sector Time Series Forecasting with ML</h2>
-    <p>Applied machine learning to link climate, energy, and consumer demand for predictive insights.</p>
-    <a href="https://github.com/KwakuBonfulBosompim/Multi-Sector-Time-Series-Forecasting-with-Machine-Learning" target="_blank">View on GitHub</a>
-  </div>
-
 </body>
 </html>
