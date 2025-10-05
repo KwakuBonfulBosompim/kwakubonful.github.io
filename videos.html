@@ -29,26 +29,49 @@
       border-radius: 10px;
     }
     a.home-link { display:block; margin-bottom:40px; text-decoration:none; color:#0F4C81; font-weight:bold; }
+    /* Navigation Bar */
+    nav {
+      width: 100%;
+      background:#0F4C81;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { opacity: 0.8; }
+    body > .content { margin-top: 100px; }
   </style>
 </head>
 <body>
-  <a href="index.html" class="home-link">&larr; Back to Home</a>
-  <h1>Popular Videos</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="videos.html">Popular Videos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <div class="video">
-    <h2>Data Analytics Project Walkthrough</h2>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video" allowfullscreen></iframe>
+  <div class="content">
+    <h1>Popular Videos</h1>
+
+    <div class="video">
+      <h2>Data Analytics Project Walkthrough</h2>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+      <h2>Stock Sentiment Forecasting Tutorial</h2>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+      <h2>Portfolio Optimization Explained</h2>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="YouTube video" allowfullscreen></iframe>
+    </div>
   </div>
-
-  <div class="video">
-    <h2>Stock Sentiment Forecasting Tutorial</h2>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video" allowfullscreen></iframe>
-  </div>
-
-  <div class="video">
-    <h2>Portfolio Optimization Explained</h2>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="YouTube video" allowfullscreen></iframe>
-  </div>
-
 </body>
 </html>
