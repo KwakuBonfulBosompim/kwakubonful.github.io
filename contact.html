@@ -1,65 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Kwaku Bonful Bosompim</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f4f4;
-      color: #0F4C81;
-      text-align: center;
-      padding: 50px 20px;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kwaku Bonful Bosompim</title>
+<style>
+body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#f4f4f4; color:#0F4C81; text-align:center; padding:50px 20px; }
+nav { width:100%; background:#0F4C81; padding:18px 0; display:flex; justify-content:center; gap:25px; position:fixed; top:0; left:0; z-index:1000; box-shadow:0 2px 8px rgba(0,0,0,0.15); }
+nav a { color:white; text-decoration:none; font-weight:bold; transition: transform 0.2s ease, opacity 0.2s ease; }
+nav a:hover { opacity:0.85; transform:scale(1.05); }
 
-    h1 { margin-bottom: 20px; }
-    p { margin-bottom: 20px; font-size: 1.1rem; }
-    a.contact-link {
-      display: inline-block;
-      margin: 10px;
-      text-decoration: none;
-      color: white;
-      background-color: #FFB03B;
-      padding: 10px 20px;
-      border-radius: 20px;
-      font-weight: bold;
-    }
-    a.contact-link:hover { background-color: #e29b30; }
+.content { margin-top:100px; }
+h1 { margin-bottom:20px; }
+p { margin-bottom:20px; font-size:1.1rem; }
 
-    /* Navigation Bar */
-    nav {
-      width: 100%;
-      background:#0F4C81;
-      padding: 15px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { opacity: 0.8; }
-    body > .content { margin-top: 100px; }
-  </style>
+a.contact-link {
+  display:inline-block; margin:10px; text-decoration:none; color:white; background-color:#FFB03B;
+  padding:10px 20px; border-radius:20px; font-weight:bold; transition: all 0.3s ease;
+}
+a.contact-link:hover { background-color:#e29b30; transform:translateY(-3px); box-shadow:0 4px 12px rgba(0,0,0,0.2); }
+
+@media (max-width:600px){ nav{padding:15px 0; gap:15px;} }
+</style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="videos.html">Popular Videos</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="videos.html">Popular Videos</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <div class="content">
-    <h1>Contact Me</h1>
-    <p>If you’d like to collaborate, discuss a project, or just say hello, feel free to reach out!</p>
+<div class="content">
+<h1>Contact Me</h1>
+<p>If you’d like to collaborate, discuss a project, or just say hello, feel free to reach out!</p>
 
-    <a href="mailto:Q1041201@students.berlinsbi.com" class="contact-link">Email Me</a>
-    <a href="https://www.linkedin.com/in/kwakubonfulbosompim/" target="_blank" class="contact-link">LinkedIn</a>
-  </div>
+<a href="mailto:Q1041201@students.berlinsbi.com" class="contact-link">Email Me</a>
+<a href="https://www.linkedin.com/in/kwakubonfulbosompim/" target="_blank" class="contact-link">LinkedIn</a>
+</div>
 </body>
 </html>
